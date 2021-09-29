@@ -1,0 +1,13 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: nacos-dubbo-consumer
+dubbo:
+  registry:
+    address: nacos://localhost:8848/
+
+# 服务版本号
+service:
+  version: 1.0.0

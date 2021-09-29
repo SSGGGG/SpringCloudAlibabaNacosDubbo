@@ -1,0 +1,23 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: nacos-duboo-provider
+
+dubbo:
+  # 扫描包地址
+  scan:
+    base-packages: nacos.dubbo
+  # 协议
+  protocol:
+    name: dubbo
+    port: -1  # 采用默认的自增端口
+  # 注册地址
+  registry:
+    address: nacos://localhost:8848/
+
+
+# 服务版本号
+service:
+  version: 1.0.0
